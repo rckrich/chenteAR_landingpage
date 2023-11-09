@@ -102,7 +102,7 @@ body #side-panel.dark {
 }
 
 .dark #header-wrap {
-	background-color: #00264b;
+	background-color: #1d1d1d;	/*ESTA CAMBIAR PARA EL MOVIL*/
 }
 
 @media (min-width: 992px) {

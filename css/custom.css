@@ -87,21 +87,30 @@
 
 
 @media screen and (min-width: 1001px) {
-    .rckFontSize {
-      font-size: 30px;
-    }
+  .rckFontSizeTitle {
+    font-size: 50px;
+  }
+    
+  .rckFontSize {
+    font-size: 30px;
+  }
+  
+  .rckHeigthWidth-1{
+    height: 50%; 
+    width: 50%;
+  }
 
-    .rckHeigthWidth-1{
-      height: 50%; 
-      width: 50%;
-    }
-
-    .rckMinVH{
-      min-height: 100vh !important;
-    }
+    
+  .rckMinVH{
+    min-height: 100vh !important;
+  }
 }
   
 @media screen and (max-width: 1000px) {
+  .rckFontSizeTitle {
+    font-size: 50px;
+  }
+
     .rckFontSize {
       font-size: 22px;
     }
@@ -121,6 +130,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .rckFontSizeTitle {
+    font-size: 7svw;
+  }
+
     .rckFontSize {
       font-size: 22px;
     }
