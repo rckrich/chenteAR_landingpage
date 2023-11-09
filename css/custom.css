@@ -121,7 +121,7 @@
     }
 
     .rckMinVH{
-      min-height: 75vh !important;
+      min-height: 100vh !important;
     }
 
     .rckCotizador{
@@ -139,7 +139,7 @@
     }
 
     .rckMinVH{
-      min-height: 75vh !important;
+      min-height: 100vh !important;
     }
 
     .rckHeigthWidth-1{
@@ -236,7 +236,20 @@ div.amoradaBlue:hover{
   background-color: #AEB09C !important;
 }
 
+.button-light.button-gold:not(.button-border) { background-color: #fab131 !important; }
+.button-3d.button-gold:hover,
+.button-reveal.button-gold:hover,
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill::before { background-color: #fab131 !important; }
 
+.button-border.button-gold,
+.button-border.button-gold.button-fill.button-light:hover {
+	color: #fab131 !important;
+	border-color: #fab131 !important;
+}
+
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill.button-light:hover { color: #333 !important; }
 
 
 

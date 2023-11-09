@@ -75,7 +75,7 @@
 				<div class="vertical-middle">
 					<div class="container text-center">
 						<div style="text-align: center;">
-							<a> <img class="logoTitle" style="width: 800px; max-height: 800px;" data-animate="animated fadeInDown" src="images/images-chente/Ornament-Cut-Gold-Header-WhiteShadow.png" style="max-width: 1200px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" alt="UMG Logo"></a>
+							<a> <img class="logoTitle" style="width: 700px; max-height: 700px;" data-animate="animated fadeInDown" src="images/images-chente/Ornament-Cut-Gold-Header-WhiteShadow.png" style="max-width: 1200px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" alt="UMG Logo"></a>
 						</div>
 						<!--
 						<div class="emphasis-title">
@@ -89,23 +89,16 @@
 						</div>
 						-->
 						
-						<!--
-						<a href="#" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia AR</a> 
-						-->
+						<br>
+						<a href="#" class="button button-border button-circle button-gold" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia</a> 
+						
 					</div>
 				</div>
 
-				
 				<div class="video-wrap" style="z-index: 1; background-color: black; object-fit:cover; height:100%; width:100%;">
-					<!--
-					<video id="titleVideoNormal" style="object-fit:cover; height:100%; width:100%;" src="videos/videos-chente/test-sky-video.mp4" playsinline loop muted autoplay alt="Chente promo video."></video>
-					<img id="titleVideoImage" style="object-fit: cover; height:100%; width:100%;" src="videos/videos-chente/test-sky-video.mp4" alt="Chente promo video.">
-					<img id="titleVideoImage" style="object-fit: cover; height:100%; width:100%;" src="images/images-chente/test-sky-image.png" alt="Chente promo video.">
-	
-				-->
 
-				<video id="titleVideoNormal" style="object-fit:cover; height:100%; width:100%;" src="videos/videos-chente/Compilation_Gral_VF_640px.mp4" playsinline loop muted autoplay alt="Chente promo video."></video>
-					<img id="titleVideoImage" style="object-fit: cover; height:100%; width:100%;" src="videos/videos-chente/Compilation_Gral_VF_640px.mp4" alt="Chente promo video.">
+					<video id="titleVideoNormal" style="object-fit:cover; height:100%; width:100%;" src="videos/videos-chente/Compilation_Gral_VF_Recortado_640px.mp4" playsinline loop muted autoplay alt="Chente promo video."></video>
+					<img id="titleVideoImage" style="object-fit: cover; height:100%; width:100%;" src="videos/videos-chente/Compilation_Gral_VF_Recortado_640px.mp4" alt="Chente promo video.">
 
 					<div class="video-overlay" style="background-color: rgba(0, 0, 0, 0.7);"></div>
 				</div>
@@ -122,15 +115,19 @@
 			<!-- <div class="divider divider-sm divider-center" style="color: rgb(0, 0, 0);"> <img src="images/images-viten/Viten-Logo-Icon.png" style="object-fit:cover; height: 80px; width:80px; border-radius: 5%;" alt="Divider"></div> -->				
 			<br>
 
+
+			<!--
 			<div class="container-fluid px-5 clearfix">
-				<h2>
+			-->
+			<div class="content-wrap">
+				<div class="container">
 					<h2 class="rckFontSizeTitle" style="text-align: left; color: rgb(250, 177, 49); font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">TE CANTA DESDE<br>EL CIELO CON AMOR.</h2>
 					
 					<span class="rckFontSize" style="text-align: left; color: rgb(100, 100, 100);">¡Únete a nosotros en un emotivo homenaje sin precedentes a la leyenda de la música mexicana, Vicente Fernández!
 						Simplemente, entra a la experiencia y apunta la cámara de tu celular al cielo para disfrutar de un tributo especial a Vicente Fernández, donde su música y legado se fusionan con el cielo estrellado.
 						Esta combinación de realidad aumentada y música excepcional te invita a honrar la memoria de "Chente", disfrutando de su inmortal voz de una manera completamente nueva y extraordinaria.
 					</span>			
-				</h2>
+				</div>
 				<!-- <h1>Nuestros Proyectos</h1> -->
 				<img src="images/images-viten/Amorada-Logotipo-01.png" class="rckHeigthWidth-1" style="display: block; margin-left: auto; margin-right: auto; max-width: 400px;" alt="Amorada logo">			
 			
@@ -270,7 +267,46 @@
 
 	<!-- Custom Scripts
 	============================================= -->
+	<!-- Detect iOS -->
+	<script>
+		var titleVideoNormal = document.getElementById("titleVideoNormal");
+		var titleVideoImage = document.getElementById("titleVideoImage");
 
+		var titleVideoNormal2 = document.getElementById("titleVideoNormal2");
+		var titleVideoImage2 = document.getElementById("titleVideoImage2");
+
+		function isThisiPhone() 
+		{
+			var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+			
+			if(iOS == true)
+			{
+				titleVideoNormal.style.display = "none";
+				titleVideoNormal2.style.display = "none";
+			}
+			else
+			{
+				titleVideoImage.style.display = "none";
+				titleVideoImage2.style.display = "none";
+			}
+		}
+	</script>
+
+	<script>
+		var $logoTitle = $(".logoTitle");
+
+		$logoTitle.on("click", function()
+		{
+			$logoTitle.removeClass("animated fadeInDown");	//lo puse porque la animacion original es esta
+			$logoTitle.removeClass("animated heartBeat");
+			
+			requestAnimationFrame(() =>{
+				$logoTitle.addClass("animated slower heartBeat");
+			});
+
+		});
+
+	</script>
 
 
 
