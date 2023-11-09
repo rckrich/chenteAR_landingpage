@@ -75,7 +75,7 @@
 				<div class="vertical-middle">
 					<div class="container text-center">
 						<div style="text-align: center;">
-							<a> <img class="logoTitle" style="width: 700px; max-height: 700px;" data-animate="animated fadeInDown" src="images/images-chente/Ornament-Cut-Gold-Header-WhiteShadow.png" style="max-width: 1200px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" alt="UMG Logo"></a>
+							<a onclick="playAudio()" type="button"> <img class="logoTitle" style="width: 700px; max-height: 700px;" data-animate="animated fadeInDown" src="images/images-chente/Ornament-Cut-Gold-Header-WhiteShadow.png" style="max-width: 1200px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" alt="UMG Logo"></a>
 						</div>
 						<!--
 						<div class="emphasis-title">
@@ -90,7 +90,7 @@
 						-->
 						
 						<br>
-						<a href="#" class="button button-border button-circle button-gold" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia</a> 
+						<a href="#" class="button button-mini button-border button-circle button-gold" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia</a> 
 						
 					</div>
 				</div>
@@ -298,15 +298,32 @@
 		$logoTitle.on("click", function()
 		{
 			$logoTitle.removeClass("animated fadeInDown");	//lo puse porque la animacion original es esta
-			$logoTitle.removeClass("animated heartBeat");
+			$logoTitle.removeClass("animated pulse");
 			
 			requestAnimationFrame(() =>{
-				$logoTitle.addClass("animated slower heartBeat");
+				$logoTitle.addClass("animated pulse");
 			});
 
 		});
 
 	</script>
+
+	<!-- Play Audio -->
+	<audio id="myAudio-ChenteIntro">
+		<source src="audio/VF_MuchisimasGracias.mp3" type="audio/mp3">
+	</audio>
+	<script>	//Con botones
+		var x = document.getElementById("myAudio-ChenteIntro"); 
+		
+		function playAudio() { 
+		x.play(); 
+		} 
+		
+		function pauseAudio() { 
+		x.pause(); 
+		} 
+	</script>
+	
 
 
 
