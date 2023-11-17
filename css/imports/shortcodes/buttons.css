@@ -438,15 +438,15 @@ body:not(.device-touch) .button.button-full strong {
 /* Buttons - Colors
 -----------------------------------------------------------------*/
 .button-red:not(.button-border) {
-  background-color: #C02942;
+  background-color: #D45555;
 }
 .button-red.button-3d:hover, .button-red.button-reveal:hover, .button-red.button-border:hover, .button-red.button-border.button-fill::before {
-  background-color: #C02942 !important;
+  background-color: #D45555 !important;
 }
 
 .button-border.button-red, .button-border.button-light.button-red {
-  color: #C02942;
-  border-color: #C02942;
+  color: #D45555;
+  border-color: #D45555;
 }
 
 .button-teal:not(.button-border) {

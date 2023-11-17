@@ -26,7 +26,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Sofia+Sans+Condensed:300,400,500,600,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -67,10 +67,8 @@
 		</header><!-- #header end -->
 
 
-
-		<!--<section id="content ">
-			<div class="content-wrap">-->
-
+		<!-- Page Title
+		============================================= -->
 		<section id="slider" class="slider-element rckMinVH dark include-header" style="object-fit: cover;">
 			<div class="slider-inner" style="justify-content: center;">
 				<div class="rckMinVH">				
@@ -78,25 +76,7 @@
 						<div class="container text-center">
 								
 							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-								<a onclick="playAudio()" type="button"> <img class="logoTitle" style="width: 400px; max-height: 400px;" data-animate="animated pulse" src="images/images-chente/Ornament-Cut-Gold-Header-WhiteShadow.png" style="max-width: 1200px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" alt="UMG Logo"></a> 							
+								<a onclick="playAudio()" type="button"> <img class="logoTitle" style="width: 250px; max-height: 250px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" data-animate="animated pulse" src="images/images-chente/VF-Logo-Intro.png" alt="Vicente Fernandez te canta desde el cielo"></a> 							
 							<br>
 							<br>
 							
@@ -111,24 +91,27 @@
 								</h1>
 							</div>
 							-->
-		
-							<!--
-							<a href="#" class="button button-mini button-border button-circle button-gold" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia</a> 
-							-->
+							
+							<a href="#" class="button button-circle button-vfred" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" style="position: relative; bottom: -400px;">Entra a la Experiencia</a> 
+							<br>
+							<br>
+							<img style="width: 350px; max-height: 250px; position: relative; bottom: -400px;" data-animate="animated pulse" src="images/images-chente/Logos-Intro.png" alt="Vicente Fernandez te canta desde el cielo"></a>
 							
 						</div>
 					</div>
-					<div class="video-wrap">
-						<video poster="images/videos/explore-poster.jpg" preload="auto" loop="" autoplay="" muted="" playsinline="" style="width: 1313.78px; height: 739px; left: -277.889px;">
-							<source src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" type="video/mp4">
-							<source src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" type="video/webm">
-						</video>
+
+					<div class="video-wrap" style="z-index: 1; background-color: black; object-fit:cover; height:100%; width:100%;">
+
+						<video id="titleVideoNormal" style="object-fit:cover; height:100%; width:100%;" src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" playsinline loop muted autoplay alt="Chente promo video."></video>
+						<img id="titleVideoImage" style="object-fit: cover; height:100%; width:100%;" src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" alt="Chente promo video.">
+	
 						<div class="video-overlay" style="background-color: rgba(0, 0, 0, 0.7);"></div>
 					</div>
+
 				</div>
 			</div>
 		</section>
-
+		<!-- Page Title end -->
 
 
 
@@ -185,7 +168,7 @@
 			<!-- <div class="divider divider-sm divider-center" style="color: rgb(0, 0, 0);"> <img src="images/images-viten/Viten-Logo-Icon.png" style="object-fit:cover; height: 80px; width:80px; border-radius: 5%;" alt="Divider"></div> -->				
 			<!--<div style="background-image: url('images/images-chente/test-sky-image.png');background-position: 100% 50%;"></div>-->
 					<div class="container" >
-						<h2 class="rckFontSizeTitle" style="text-align: left; color: rgb(250, 177, 49); font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">TE CANTA DESDE<br>EL CIELO CON AMOR.</h2>
+						<h2 class="rckFontSizeTitle" style="text-align: center; color: rgb(221, 174, 85); font-weight: bold; font-family:'Sofia Sans Condensed', sans-serif; filter: drop-shadow(2px 2px 0px rgb(212, 85, 85));">SOBRE LA<br>EXPERIENCIA</h2>
 						
 						<span class="rckFontSize" style="text-align: left; color: rgb(90, 90, 90);">¡Únete a nosotros en un emotivo homenaje sin precedentes para la leyenda de la música mexicana!
 							<br>
@@ -233,6 +216,44 @@
 
 					
 		</section>
+
+		<!--
+		<section id="slider" class="slider-element rckMinVH dark include-header" style="object-fit: cover;">
+			<div class="slider-inner" style="justify-content: center;">
+				<div class="rckMinVH">				
+					<div class="vertical-middle text-center">
+						<div class="container text-center">
+								
+		
+							
+							<div class="emphasis-title">
+								<h1>
+									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="4000">
+										<span class="t-rotate fw-bold font-body opm-large-word morphext">
+											<span class="animated fadeIn">creativo.|formalidad.|crecimiento.|proyección.|vida.</span>
+										</span>
+									</span>
+								</h1>
+							</div>
+							
+		
+							
+							<a href="#" class="button button-mini button-border button-circle button-gold" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Entra a la Experiencia</a> 
+							
+							
+						</div>
+					</div>
+					<div class="video-wrap">
+						<video poster="images/videos/explore-poster.jpg" preload="auto" loop="" autoplay="" muted="" playsinline="" style="width: 1313.78px; height: 739px; left: -277.889px;">
+							<source src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" type="video/mp4">
+							<source src="videos/videos-chente/Header_Compilation_Gral_VF_Horizontal.mp4" type="video/webm">
+						</video>
+						<div class="video-overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
 
 		<section id="page-title" style="background-color: #1b1b1b; ">
 

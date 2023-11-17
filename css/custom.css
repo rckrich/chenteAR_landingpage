@@ -88,7 +88,7 @@
 
 @media screen and (min-width: 1001px) {
   .rckFontSizeTitle {
-    font-size: 50px;
+    font-size: 70px;
   }
     
   .rckFontSize {
@@ -108,7 +108,7 @@
   
 @media screen and (max-width: 1000px) {
   .rckFontSizeTitle {
-    font-size: 50px;
+    font-size: 70px;
   }
 
     .rckFontSize {
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 600px) {
   .rckFontSizeTitle {
-    font-size: 7svw;
+    font-size: 10svw;
   }
 
     .rckFontSize {
@@ -252,4 +252,31 @@ div.amoradaBlue:hover{
 .button-border.button-gold.button-fill.button-light:hover { color: #333 !important; }
 
 
+
+.button-vfred:not(.button-border) { background-color: #D45555 !important; }
+.button-3d.button-vfred:hover,
+.button-reveal.button-vfred:hover,
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill::before { background-color: #D45555 !important; }
+.button-vfred:hover { background-color: #DDAE55 !important; }
+
+.button-border.button-vfred,
+.button-border.button-vfred.button-fill.button-light:hover {
+	color: #D45555 !important;
+	border-color: #D45555 !important;
+}
+
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill.button-light:hover { color: #ffffff !important; }
+
+.button-vfred:not(.button-border) {
+  background-color: #D45555;
+}
+.button-vfred.button-3d:hover, .button-vfred.button-reveal:hover, .button-vfred.button-border:hover, .button-vfred.button-border.button-fill::before {
+  background-color: #D45555 !important;
+}
+.button-border.button-vfred, .button-border.button-light.button-vfred {
+  color: #D45555;
+  border-color: #D45555;
+}
 
